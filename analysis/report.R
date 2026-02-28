@@ -1,7 +1,7 @@
 library(tidyverse)
 
 # Read CSV data from output folder
-data <- read_csv(here::here("output", "dataset.csv")) %>% 
+data <- read_csv(here::here("output", "dataset.csv.gz")) %>% 
     dplyr::mutate(patient_id = as.integer(patient_id))
 
 # Create histogram
